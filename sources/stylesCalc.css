@@ -1,0 +1,37 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html{
+    font-size: 62.5%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header, main{
+    font-size: 1.6em;
+}
+
+
+
+.main-sectionTriangulo__form, .main-sectionCuadrado__form, .main-sectionCirculo__form{ 
+    display: flex;
+    flex-direction: column;
+}
+.main-sectionTriangulo__form label input, .main-sectionTriangulo__form label span{
+    display: block;
+}
+.main-sectionCuadrado__form label input, .main-sectionCuadrado__form label span{
+    display: block;
+}
+.main-sectionCirculo__form label input, .main-sectionCirculo__form label span{
+    display: block;
+}
+
+.main-sectionCuadrado__form > div, .main-sectionTriangulo__form > div, .main-sectionCirculo__form > div{
+    display: flex;
+    justify-content: space-around;
+}
+.inputs{
+    position: relative;
+    left: calc(50vw - 88.5px);
+}

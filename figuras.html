@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./sources/stylesCalc.css">
+        <title>Calculando ando</title>
+    </head>
+    
+    <body>
+        <header>
+            <img src="" alt="">
+            <div>
+                <h1>Calculando ando</h1>
+                <p>Esta web app te ayuda a calcular el perímetro y área de diferentes figuras geométricas</p>
+                <a href=""></a>
+            </div>
+        </header>
+
+        <main>
+            <section class="main-sectionCuadrado">
+                <h2>Calculando ando del cuadrado</h2>
+                <form action="" class="main-sectionCuadrado__form">
+                    <label for="ladoCuadrado"> 
+                        <span>lado de tu cuadrado: </span>
+                        <input type="number" name="lados" id="ladoCuadrado" class="inputs"/>
+                    </label>
+                    <div>
+                        <input type="button" value="calcular perimetro" onclick="calcularPerimetroCuadrado()"/>
+                        <input type="button" value="calcular area" onclick="calcularAreaCuadrado()"/>
+                    </div>
+                </form>
+            </section>
+
+            <section class="main-sectionTriangulo"> 
+                <h3>Calculando ando del triángulo</h3>
+                <form action="" class="main-sectionTriangulo__form">
+                    <label for="lado1">
+                        <span>Ingresa un lado del triangulo: </span>
+                        <input type="number" name="lado1" id="lado1" class="inputs">
+                    </label>
+                    <label for="lado2">
+                        <span>Ingresa el otro lado: </span>
+                        <input type="number" name="lado2" id="lado2" class="inputs">
+                    </label>
+                    <label for="base">
+                        <span>Ingresa la base: </span>
+                        <input type="number" name="base" id="base" class="inputs">
+                    </label>
+                    <div>
+                        <input type="button" value="calcular perimetro" onclick="calcularPerimetroTriangulo()"/>
+                        <input type="button" value="calcular area" onclick="calcularAreaTriangulo()"/>
+                    </div>
+                </form>
+            </section>
+
+            <section class="main-sectionCirculo">
+                <h4>Calculando ando del círculo</h4>
+                <form action="" class="main-sectionCirculo__form">
+                    <label for="radio">
+                        <span>Ingresa el radio del cuadrado: </span>
+                        <input type="number" name="radio" id="radio" class="inputs">
+                    </label>
+                    <div>
+                        <input type="button" value="Diametro" onclick="calcularDiametroCirculo()">
+                        <input type="button" value="Perimetro" onclick="calcularPerimetroCirculo()">
+                        <input type="button" value="Area" onclick="calcularAreaCirculo()">
+                    </div>
+                </form>
+            </section>
+        </main>
+        <footer></footer>
+        <script src="./figuras.js"></script>
+    </body>
+</html>
